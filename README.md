@@ -1,4 +1,4 @@
-# cart: a tiny project to try Foreman on
+# Foreman demo (conflict side A)
 
 `cart.total(prices, discount=0)` has one bug: `discount` is a percentage, but the code treats it as a fraction, so a
 10 % discount on 100 gives -900. `test_discount_is_a_percentage` fails; `test_total` passes. `.foreman.json` names the
