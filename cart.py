@@ -8,3 +8,8 @@ on 100 gives -900 instead of 90. The test `test_discount_is_a_percentage` catche
 def total(prices, discount=0):
     """The sum of `prices`, less `discount` percent."""
     return sum(prices) * (100 - discount) / 100
+
+
+def count(prices):
+    """How many items are in the cart."""
+    return len(prices)

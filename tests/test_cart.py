@@ -1,6 +1,6 @@
 import unittest
 
-from cart import total
+from cart import count, total
 
 
 class CartTest(unittest.TestCase):
@@ -21,6 +21,10 @@ class CartTest(unittest.TestCase):
         for prices, discount, expected in cases:
             with self.subTest(prices=prices, discount=discount):
                 self.assertEqual(total(prices, discount=discount), expected)
+
+
+    def test_count(self):
+        self.assertEqual(count([10, 20, 30]), 3)
 
 
 if __name__ == "__main__":
