@@ -13,3 +13,8 @@ def total(prices, discount=0):
 def count(prices):
     """How many items are in the cart."""
     return len(prices)
+
+
+def is_empty(prices):
+    """Whether the cart has no items."""
+    return len(prices) == 0
